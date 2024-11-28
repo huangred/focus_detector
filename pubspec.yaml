@@ -1,5 +1,6 @@
 name: focus_detector_v2
 description: Detects when your widget appears or disappears from the screen.
+publish_to: none
 version: 3.1.0+1
 homepage: https://github.com/irfnyas/focus_detector
 
@@ -9,7 +10,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  visibility_detector: ^0.4.0+2
+  visibility_detector:
+    git:
+      url: https://github.com/huangred/flutter.widgets.git
+      ref: 042196e85ef7c886542a036c409869cfcdff638f
+      path: packages/visibility_detector
 
 dev_dependencies:
   flutter_test:
